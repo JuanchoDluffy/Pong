@@ -1,0 +1,55 @@
+h1 {
+  color: #ebfcfb;
+  font-size: xx-large;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6c935c;
+}
+
+.score-container {
+  display: flex;
+}
+.score {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+.stadium {
+  background-color: #3c638e;
+  position: relative;
+  width: 50rem;
+  height: 30rem;
+  border: 0.5rem solid #ebfcfb;
+  overflow: hidden;
+  align-self: center;
+}
+
+.player {
+  position: absolute;
+  width: 12px;
+  height: 80px;
+  top: 40%;
+  background-color: #000;
+  border-radius: 20%;
+}
+
+#P1 {
+  left: 10px;
+}
+
+#P2 {
+  right: 10px;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #dfff4f;
+  left: 47%;
+  top: 45%;
+}
