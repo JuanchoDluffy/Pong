@@ -4,23 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/lvdc-game-over"
+      rel="stylesheet"
+    />
     <title>Pong</title>
   </head>
   <body>
-    <h1>Pong</h1>
+    <h1>New Super Pong 3000XD</h1>
     <div class="score-container">
-      <div class="score" id="P1score">
-        <h1>0</h1>
+      <div class="score">
+        <h1 id="P1score">0</h1>
       </div>
-      <div class="score" id="P2score">
-        <h1>0</h1>
+      <div class="score">
+        <h1 id="P2score">0</h1>
       </div>
     </div>
     <div class="stadium">
       <div class="player" id="P1"></div>
       <div class="player" id="P2"></div>
       <div class="ball" id="ball"></div>
+      <div id="net"></div>
     </div>
+    <div class="button_container">
+      <button class="start" onclick="startGame()">Click to start Game</button>
+    </div>
+    <h2>Player 1: Use "w" and "s" keys</h2>
+    <h2>Player 2: Use arrow up and arrow down keys</h2>
+
+    <div id="gameOverMessage" class="gameOverMessage">
+      <h1>Game Over!</h1>
+      <p id="winner">Player x wins !!!</p>
+      <p>Reload Page to Play</p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
